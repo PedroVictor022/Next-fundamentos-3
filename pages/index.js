@@ -11,16 +11,16 @@ export default function Home() {
   return (
     <div>
       <HeaderC title="Fundamentos do Next.JS"/>
-
       <div className={navbar.nav}>
-        <Link href="/teste1">Pagina de Testes</Link>
-        <Link href="/sobre-next">Sobre o Next</Link>
-        <Link href="/documentacao">Docs</Link>
-        <Link href="/perfil">Perfil</Link>
+        <Link href="/teste1" colorItem={`red`}>Pagina de Testes</Link>
+        <Link href="/sobre-next" colorItem={`green`}>Sobre o Next</Link>
+        {/* Como o item abaixo esta dentro de uma pasta, para acessar, temos que entrar na pasta tambem - o nome apos a barra e o endereco do conteudo*/}
+        <Link href="/cliente/cliente29023" colorItem={`violet`}>Acessar cliente 2</Link>
       </div>
 
       <Layout>
-        
+        <h1>Testando Layout</h1>
+        <p>Componente para toda a aplicacao</p>
       </Layout>
       
       <h2>Integração com Javascript</h2>

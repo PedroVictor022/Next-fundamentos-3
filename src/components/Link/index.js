@@ -1,9 +1,9 @@
 import NextLink from "next/link";
 
-function Link({ children, href, ...props }) {
+function Link({ children, href, colorItem, ...props }) {
    return (
       <NextLink href={href} passHref>
-         <p {...props}>{children}</p>
+         <p {...props} style={{ backgroundColor: colorItem ?? `darkcyan`}}>{children}</p>
       </NextLink>
    )
 }
