@@ -1,7 +1,8 @@
-function HeaderC () {
+
+function HeaderC (props) {
    return (
       <div>
-         <h1>Fundamentos do Next.JS</h1>
+         <h1>{props.title}</h1>
          <hr/>
       </div>
    )
