@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "../../src/components/Link";
 import Layout from "../../src/Layout";
 
 function Integration() {
@@ -30,6 +31,8 @@ function Integration() {
             <li>Nome: {cliente.nome}</li>
             <li>Email: {cliente.email}</li>
          </ul>
+
+         <Link href="/">Voltar para a Home</Link>
       </Layout>
    )
 }
