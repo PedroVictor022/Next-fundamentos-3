@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+export default function handler1(req, res) {
    if (req.method === "GET") {
       handleGet(req, res);
    } else {
